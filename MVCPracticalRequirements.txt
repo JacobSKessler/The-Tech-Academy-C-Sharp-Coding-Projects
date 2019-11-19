@@ -1,4 +1,4 @@
-MVC PRACTICAL EXERCISE
+MVC PRACTICAL EXERCISE [video at 230]
 You've been tasked with building an application for generating quotes for car insurance.
 
 REQUIREMENTS

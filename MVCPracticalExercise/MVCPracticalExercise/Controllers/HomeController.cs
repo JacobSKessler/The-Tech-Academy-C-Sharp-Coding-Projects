@@ -13,6 +13,15 @@ namespace MVCPracticalExercise.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult SignUp(string FirstName, string LastName, string EMail, DateTime DateOfBirth, 
+                                    int CarYear, string CarMake, string CarModel, string DUI, int Tickets,
+                                    string Coverage) 
+        {
+
+            return null;
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
