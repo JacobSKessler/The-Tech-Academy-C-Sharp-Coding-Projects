@@ -54,7 +54,7 @@ namespace MVCPracticalExercise.Controllers
 
                 //SQL interaction
 
-                string queryString = @"INSERT INTO QuoteData (FirstName, LastName, Email, Quote, Time) VALUES 
+                string queryString = @"INSERT INTO Quotes (FirstName, LastName, Email, Quote, Time) VALUES 
                                         (@FirstName, @LastName, @Email, @Quote, @Time)";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -67,7 +67,7 @@ namespace MVCPracticalExercise.Controllers
                     command.Parameters.Add("@Time", SqlDbType.DateTime);
 
                     command.Parameters["@FirstName"].Value = firstName;
-                    command.Parameters["@LasttName"].Value = lastName;
+                    command.Parameters["@LastName"].Value = lastName;
                     command.Parameters["@Email"].Value = eMail;
                     command.Parameters["@Quote"].Value = myQuote;
                     command.Parameters["@Time"].Value = DateTime.Now;
