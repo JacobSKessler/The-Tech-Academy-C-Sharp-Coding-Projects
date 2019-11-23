@@ -1,0 +1,37 @@
+﻿@using MVCPracticalExercise.Models
+@model List<GetQuote>
+
+
+    <div class="row no-gutters m-3">
+        <div class="card-header col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+            <div class="card-header text-center">
+                <h5 class="m-0">Quote Records</h5>
+            </div>
+            <div class="card-body">
+                @foreach (var quote in Model)
+                {
+                    <div class="row">
+                        
+                        <div class="col">
+                            @quote.FirstName
+                        </div>
+                        <div class="col">
+                            @quote.LastName
+                        </div>
+                        <div class="col">
+                            @quote.Email
+                        </div>
+                        <div class="col">
+                            @quote.Quote
+                        </div>
+                        <div class="col">
+                            @quote.Time
+                        </div> 
+
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+
